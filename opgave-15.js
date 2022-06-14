@@ -18,7 +18,20 @@ module.exports = {isAnagram}
 
 function isAnagram(x, y) {
   var teruggeefWaarde = false;
+  let tel = 0
 
+  if(x !== y && x != "" && y !=""){
+    for(i in x){
+      for(j in y){
+        if(x[i] === y[j]){
+        tel++
+        }
+      }
+    }
+    if(tel == x.length){
+      teruggeefWaarde = true
+    }
+  }
 
 
 
